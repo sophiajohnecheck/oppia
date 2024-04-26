@@ -462,9 +462,7 @@ export class TutorCardComponent {
   }
 
   showAudioBar(): boolean {
-    return (
-      !this.isIframed && !this.explorationPlayerStateService.isInQuestionMode()
-    );
+    return !this.explorationPlayerStateService.isInQuestionMode();
   }
 
   isContentAudioTranslationAvailable(): boolean {
